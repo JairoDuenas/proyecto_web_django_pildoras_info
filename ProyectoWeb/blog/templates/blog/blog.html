@@ -2,9 +2,26 @@
 {% load static %}
 {% block content %}
 
-  <!-- Heading -->
-  <h2>Blog</h2>
+{% for post in posts %}
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img
+      class="intro-img img-fluid mb-3 mb-lg-0 rounded"
+      src="{{post.imagen.url}}"
+      alt="Imagenes del post"
+      style="width: 40%;">
+      sty
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-lower">{{post.titulo}}</span>
+          <span class="section-heading-upper">{{post.contenido}}</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Message -->
+{% endfor %}
 
 {% endblock %}
