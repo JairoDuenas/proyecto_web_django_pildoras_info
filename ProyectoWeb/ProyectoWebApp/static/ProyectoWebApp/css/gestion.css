@@ -287,3 +287,36 @@ ul.errorlist{
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
+
+.contenedor-formulario{
+  background-color: rgba(3, 82, 27, 0.8);
+  color: azure;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1px 0px;
+}
+
+@media (min-width: 992px) {
+  .contenedor-formulario {
+    width: 50%;
+  }
+}
+
+.form-contacto{
+  text-align: -webkit-center;
+}
+
+.table-formulario-contacto{
+  margin: 20px auto;
+}
+
+.enviar-contacto{
+  width: 150px;
+  margin-bottom: 20px;
+  background-color: rgb(210, 240, 240);
+}
+
+.enviar-contacto:hover{
+  cursor: pointer;
+}

@@ -3,7 +3,15 @@
 {% block content %}
 
   <!-- Heading -->
-  <div><p style="color:azure">{{miFormulario}}</p></div>
+  <div class="contenedor-formulario">
+    <form class="form-contacto" action="" method="POST">
+      {% csrf_token %}
+      <table class="table-formulario-contacto">
+        {{miFormulario.as_table}}
+      </table>
+      <input class="enviar-contacto" type="submit" value="Enviar" >
+    </form>
+  </div>
 
   <!-- Message -->
 
