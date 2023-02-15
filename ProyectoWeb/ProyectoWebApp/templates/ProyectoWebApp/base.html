@@ -29,7 +29,7 @@
       Hola {{user.username}} &nbsp; <a class="btn btn-info btn-sm" role="button" href="{% url 'cerrar_sesion' %}" class="text-light">Cerrar sesión</a>
       {% else %}
       <div>
-          <a class="btn btn-primary btn-sm" role="button" href="#">Login</a>
+          <a class="btn btn-primary btn-sm" role="button" href="{% url 'logear' %}">Login</a>
           <a class="btn btn-success btn-sm" role="button" href="{% url 'Autenticacion' %}">Registrarse</a>
       </div>
     {% endif %}
