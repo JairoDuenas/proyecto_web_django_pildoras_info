@@ -4,8 +4,12 @@
 
 <!-- Heading -->
 <div class="container">
-  <div style="float:right;">
-    {% include 'carro/widget.html' %}
+  <div class="" style="float:right;">
+    {% if request.user.is_authenticated %}
+      {% include 'carro/widget.html' %}
+    {% else %}
+      <div class="alert alert-warning text-center">Login para ver carro</div>
+    {% endif %}
   </div>
   <div class="row">
     {% for producto in productos %}
